@@ -1,0 +1,19 @@
+Package: readcern
+Title: Read Columnar Data At CERN
+Version: 0.0.0.9000
+Authors@R: person("Rosen", "Matev", email = "r.matev@gmail.com", role = c("aut", "cre"))
+Description: A utility package for reading columnar file formats found
+    at CERN. Provides support for reading over the XRootD protocol.
+Depends: R (>= 3.4.1)
+Imports:
+    dplyr,
+    magrittr,
+    readr,
+    rlang,
+    tibble
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: testthat
+Roxygen: list(markdown = TRUE)
