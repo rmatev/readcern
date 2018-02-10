@@ -4,6 +4,7 @@
 #' at CERN. It provides support for reading over the XRootD protocol.
 #'
 #' @import readr
+#' @import dplyr
 #' @importFrom magrittr "%>%"
 #' @importFrom rlang .data
 "_PACKAGE"

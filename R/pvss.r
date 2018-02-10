@@ -16,6 +16,6 @@ read_pvss_export <- function(file) {
     DPE = col_character(),
     TS = col_datetime(format = "%d-%m-%Y %H:%M:%OS"), #, tz=locale(tz="CET")), #TODO: choose correct timezone here
     VALUE = col_character()
-  )) %>% dplyr::rename(time = 'TS', variable = 'DPE', value = 'VALUE')
-  data %>% dplyr::mutate(time = as.numeric(.data$time))
+  )) %>% rename(time = 'TS', variable = 'DPE', value = 'VALUE')
+  data %>% mutate(time = as.numeric(.data$time))
 }
