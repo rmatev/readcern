@@ -17,6 +17,7 @@ This is a simple wrapper around \code{\link[=read_csv]{read_csv()}}. Columns are
 and times are converted to UNIX timestamps.
 }
 \examples{
+read_pvss_export(readcern_example('pvss.csv'))
 read_pvss_export('root://eosuser.cern.ch//eos/user/r/rmatev/readcern/pvss.csv')
 }
 \seealso{

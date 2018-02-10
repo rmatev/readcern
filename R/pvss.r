@@ -8,6 +8,7 @@
 #' @seealso [read_csv()].
 #' @export
 #' @examples
+#' read_pvss_export(readcern_example('pvss.csv'))
 #' read_pvss_export('root://eosuser.cern.ch//eos/user/r/rmatev/readcern/pvss.csv')
 read_pvss_export <- function(file) {
   file <- standardise_path(file)
