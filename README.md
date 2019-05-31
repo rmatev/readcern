@@ -22,7 +22,14 @@ readr::read_file(connection)
 ```
 Compressed files (`.gz`, `.bz2` and `.xz`) are also supported.
 
+### Reading data from the accelerator logging database
+```r
+read_acclogging_csv(readcern_example('Summary_4691_B1.HYB.CSV.gz'))
+```
+
 ### Reading `PVSSExport` data
+`PVSSExport` is an LHCb-specific tool that writes out data in csv format.
+A thin wrapper arround `read_csv` is provided to read them:
 ```r
 readcern::read_pvss_export('root://eosuser.cern.ch//eos/user/r/rmatev/readcern/pvss.csv')
 ```
